@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
-from db import db
-from tokens import store_token
+from .db import db
+from .tokens import store_token
 import bcrypt
 from pydantic import BaseModel
 

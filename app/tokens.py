@@ -4,7 +4,7 @@ import jwt
 from dotenv import load_dotenv
 from datetime import timedelta
 
-load_dotenv("../.env")
+load_dotenv()
 
 HOST = os.getenv('REDIS_HOST', "localhost")
 PORT = os.getenv('REDIS_PORT')
