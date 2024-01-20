@@ -7,8 +7,8 @@ from datetime import timedelta
 load_dotenv()
 
 HOST = os.getenv('REDIS_HOST', "localhost")
-PORT = os.getenv('REDIS_PORT')
-PW = os.getenv('REDIS_PASSWORD')
+PORT = os.getenv('REDIS_PORT', 6379)
+PW = os.getenv('REDIS_PASSWORD', None)
 SCRT = os.getenv('SECRET_JWT', "idk")
 
 red = redis.Redis(host=HOST, port=PORT, password=PW, decode_responses=True)
